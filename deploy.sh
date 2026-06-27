@@ -21,8 +21,9 @@ echo "--- Starting Build for fudge.org at $(date) ---"
 cd $PROJECT_DIR || { echo "Directory not found"; exit 1; }
 
 # 1. Get the latest content
-echo "--> Pulling latest changes from GitHub..."
-git pull origin main
+echo "--> Forcing exact sync with GitHub..."
+git fetch origin main
+git reset --hard origin/main
 
 # 2. Update dependencies
 echo "--> Updating dependencies..."
