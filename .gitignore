@@ -1,0 +1,29 @@
+# Node modules
+node_modules
+
+# generated files
+dist
+src/assets/og-images/*.jpeg
+src/_includes/css/*.css
+src/_includes/scripts/*.js
+
+# cache
+.cache
+
+# secret data
+.env
+webhook.env
+
+# other
+.DS_Store
+.vscode
+.obsidian
+
+# python env
+.venv
+
+# Local testing; prevents committing the test configuration
+.eleventyignore
+.eleventyignore-*
+build.log
+.log
