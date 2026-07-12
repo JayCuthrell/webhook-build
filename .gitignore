@@ -26,4 +26,4 @@ webhook.env
 .eleventyignore
 .eleventyignore-*
 build.log
-.log
+deploy.log
